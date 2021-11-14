@@ -1,0 +1,23 @@
+/* body {
+    background-image: url('https://i.pinimg.com/originals/f9/1f/f2/f91ff2e03ff251ab767e37f266bd4da9.jpg');
+} */
+#dash{
+    background-color: rgba(90, 89, 89, 0.315);
+    min-height:90vh;
+}
+
+.navborder {
+    border:1px solid rgb(7, 7, 7);
+    margin: 2px;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+
+    
+}
+.navborder:hover {
+    border:1px solid rgb(236, 236, 245);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    
+}

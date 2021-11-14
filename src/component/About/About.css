@@ -1,0 +1,9 @@
+.background {
+    background-image: url('https://i.ibb.co/tPHcgcx/9e2dd729c8db052d5cb643aeb5ed4c16-1.jpg');
+    padding: 2% 10%;
+    margin-top: 5%;
+}
+.background img{
+    height: 35vh;
+    border-radius: 10%;
+}
