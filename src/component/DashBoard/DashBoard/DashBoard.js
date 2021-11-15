@@ -1,11 +1,10 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import {
-  BrowserRouter as Router,
+  
   Switch,
   Route,
   Link,
-  useParams,
   useRouteMatch
 } from "react-router-dom";
 import useAuth from '../../../hooks/useAuth';

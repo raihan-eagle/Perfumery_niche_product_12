@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='d-md-flex justify-content-md-around bg-warning p-3 '>
                         <div className='text-dark text-center'>
                             <h4>Partners</h4>
-                            <img src="https://i.ibb.co/GFwNqJP/download.jpg" alt="" />
+                            <img src="https://i.ibb.co/X8Cb2P2/download.png" alt="" />
                             
                             <br />
                             <img src="https://i.ibb.co/PTcPVhS/Respawn2.webp" alt="" />

@@ -13,7 +13,7 @@ const MakeAdmin = () => {
         e.preventDefault()
         const user = {email}
         console.log(email)
-        fetch('http://localhost:5000/users/admin',{
+        fetch('https://powerful-depths-82675.herokuapp.com/users/admin',{
             method : 'PUT',
             headers: {
                 'content-type' : 'application/json'

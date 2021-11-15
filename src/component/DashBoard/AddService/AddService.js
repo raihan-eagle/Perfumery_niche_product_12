@@ -17,7 +17,7 @@ const AddService = () => {
         const { register, handleSubmit, reset } = useForm();
         const onSubmit = data => {
             console.log(data);
-            axios.post('http://localhost:5000/services', data)
+            axios.post('https://powerful-depths-82675.herokuapp.com/services', data)
             .then(res=>{
                 if(res.data.insertedId){
                     alert('Data Added Successfully ! ');

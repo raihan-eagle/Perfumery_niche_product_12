@@ -6,7 +6,7 @@ const MyOrders = () => {
     const {user} = useAuth();
 
     useEffect(()=>{
-        const url = `http://localhost:5000/orders/${user.email}`;
+        const url = `https://powerful-depths-82675.herokuapp.com/orders/${user.email}`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>setOrders(data))
@@ -15,7 +15,7 @@ const MyOrders = () => {
     },[])
 
     const handleDelete = id =>{
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://powerful-depths-82675.herokuapp.com/orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         }).then(res=>res.json()).then(data =>{

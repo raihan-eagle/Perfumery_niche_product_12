@@ -10,18 +10,19 @@ const ServiceDetails = () => {
     const [service, setService] = useState([])
     const [status, setStatus] = useState()
     useEffect(()=>{
-        fetch(`http://localhost:5000/services/${serviceid}`)
+        fetch(`https://powerful-depths-82675.herokuapp.com/services/${serviceid}`)
         .then(res=>res.json())
         .then(data => setService(data))
         
-    },[])
+    },[serviceid])
+    // serviceid added for clearing warning
 
     const {user,admin} = useAuth();
 
     const { register, handleSubmit, reset } = useForm();
         const onSubmit = data => {
             console.log(data);
-            axios.post('http://localhost:5000/orders', data)
+            axios.post('https://powerful-depths-82675.herokuapp.com/orders', data)
             .then(res=>{
                 if(res.data.insertedId){
                     alert('Order Added Successfully ! ');
@@ -29,6 +30,7 @@ const ServiceDetails = () => {
                     setStatus(true)
                 }
                 console.log(res);
+                console.log(status)
             })
             
         };

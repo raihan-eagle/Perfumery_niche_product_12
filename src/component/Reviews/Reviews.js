@@ -10,7 +10,7 @@ const Reviews = () => {
 
     useEffect(()=>{
         setIsloading(false)
-        fetch('http://localhost:5000/reviews')
+        fetch('https://powerful-depths-82675.herokuapp.com/reviews')
         .then(res=>res.json())
         .then(data=>setReviews(data))
         // setIsloading(true)

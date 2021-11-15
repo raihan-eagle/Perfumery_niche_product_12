@@ -13,7 +13,7 @@ const Explore = () => {
 
     useEffect(()=>{
         setIsloading(false)
-        fetch('http://localhost:5000/services')
+        fetch('https://powerful-depths-82675.herokuapp.com/services')
         .then(res=>res.json())
         .then(data=>setProducts(data))
         // setIsloading(true)

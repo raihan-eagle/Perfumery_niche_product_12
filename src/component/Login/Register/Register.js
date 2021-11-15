@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Alert, Modal, Spinner } from 'react-bootstrap';
-import { NavLink, useHistory, useLocation } from 'react-router-dom'
+import { Alert, Spinner } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom'
 import useAuth from '../../../hooks/useAuth';
 import Header from '../../Header/Header';
 
